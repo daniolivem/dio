@@ -1,0 +1,30 @@
+{
+  "name": "simulador-mk",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "mario-kart",
+    "game",
+    "simulator",
+    "javascript",
+    "nintendo",
+    "racing",
+    "dio",
+    "bootcamp"
+  ],
+  "author": "Daniely Oliveira - DIO Bootcamp",
+  "license": "MIT",
+  "description": "Simulador de corridas do Mario Kart desenvolvido em JavaScript como parte do desafio de projeto do bootcamp DIO. O jogo simula corridas com diferentes personagens, cada um com suas próprias características de velocidade, manobrabilidade e poder.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dio/simulador-mk"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
