@@ -71,8 +71,7 @@ async function resetPlayerPoints() {
   const allPlayers = [player1, player2, player3, player4, player5, player6];
   allPlayers.forEach(player =>{
     player.PONTOS = 0;
-  });
-  
+  }); 
 }
 
 async function rollDice() {
