@@ -1,103 +1,273 @@
-<h1>Desafio de projeto do Felipão: Mario Kart.JS</h1>
+# 🏎️ Mario Kart.JS - Simulador de Corrida
 
-  <table>
-        <tr>
-            <td>
-                <img src="./docs/header.gif" alt="Mario Kart" width="200">
-            </td>
-            <td>
-                <b>Objetivo:</b>
-                <p>Mario Kart é uma série de jogos de corrida desenvolvida e publicada pela Nintendo. Nosso desafio será criar uma lógica de um jogo de vídeo game para simular corridas de Mario Kart, levando em consideração as regras e mecânicas abaixo.</p>
-            </td>
-        </tr>
-    </table>
+<div align="center">
+  <img src="./docs/header.gif" alt="Mario Kart Header" width="300">
+  
+  ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+  ![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
+  ![MIT License](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)
+</div>
 
-<h2>Players</h2>
-      <table style="border-collapse: collapse; width: 800px; margin: 0 auto;">
-        <tr>
-            <td style="border: 1px solid black; text-align: center;">
-                <p>Mario</p>
-                <img src="./docs/mario.gif" alt="Mario Kart" width="60" height="60">
-            </td>
-            <td style="border: 1px solid black; text-align: center;">
-                <p>Velocidade: 4</p>
-                <p>Manobrabilidade: 3</p>
-                <p>Poder: 3</p>
-            </td>
-             <td style="border: 1px solid black; text-align: center;">
-                <p>Peach</p>
-                <img src="./docs/peach.gif" alt="Mario Kart" width="60" height="60">
-            </td>
-            <td style="border: 1px solid black; text-align: center;">
-                <p>Velocidade: 3</p>
-                <p>Manobrabilidade: 4</p>
-                <p>Poder: 2</p>
-            </td>
-              <td style="border: 1px solid black; text-align: center;">
-                <p>Yoshi</p>
-                <img src="./docs/yoshi.gif" alt="Mario Kart" width="60" height="60">
-            </td>
-            <td style="border: 1px solid black; text-align: center;">
-                <p>Velocidade: 2</p>
-                <p>Manobrabilidade: 4</p>
-                <p>Poder: 3</p>
-            </td>
-        </tr>
-        <tr>
-            <td style="border: 1px solid black; text-align: center;">
-                <p>Bowser</p>
-                <img src="./docs/bowser.gif" alt="Mario Kart" width="60" height="60">
-            </td>
-            <td style="border: 1px solid black; text-align: center;">
-                <p>Velocidade: 5</p>
-                <p>Manobrabilidade: 2</p>
-                <p>Poder: 5</p>
-            </td>
-            <td style="border: 1px solid black; text-align: center;">
-                <p>Luigi</p>
-                <img src="./docs/luigi.gif" alt="Mario Kart" width="60" height="60">
-            </td>
-            <td style="border: 1px solid black; text-align: center;">
-                <p>Velocidade: 3</p>
-                <p>Manobrabilidade: 4</p>
-                <p>Poder: 4</p>
-            </td>
-            <td style="border: 1px solid black; text-align: center;">
-                <p>Donkey Kong</p>
-                <img src="./docs/dk.gif" alt="Mario Kart" width="60" height="60">
-            </td>
-            <td style="border: 1px solid black; text-align: center;">
-                <p>Velocidade: 2</p>
-                <p>Manobrabilidade: 2</p>
-                <p>Poder: 5</p>
-            </td>
-        </tr>
-    </table>
+## 📋 Sobre o Projeto
 
-<p></p>
+Este é um simulador de corridas baseado no clássico jogo Mario Kart da Nintendo, desenvolvido em JavaScript como parte do desafio do Bootcamp da DIO. O projeto simula corridas entre personagens icônicos do universo Mario, com mecânicas de jogo que incluem diferentes tipos de pista e atributos únicos para cada personagem.
 
-<h3>🕹️ Regras & mecânicas:</h3>
+## 🎮 Personagens Disponíveis
 
-<b>Jogadores:</b>
+<table align="center">
+  <tr>
+    <th>Personagem</th>
+    <th>Avatar</th>
+    <th>Velocidade</th>
+    <th>Manobrabilidade</th>
+    <th>Poder</th>
+    <th>Características</th>
+  </tr>
+  <tr>
+    <td><strong>Mario</strong></td>
+    <td><img src="./docs/mario.gif" width="50" height="50"></td>
+    <td>4</td>
+    <td>3</td>
+    <td>3</td>
+    <td>Equilibrado em todos os aspectos</td>
+  </tr>
+  <tr>
+    <td><strong>Bowser</strong></td>
+    <td><img src="./docs/bowser.gif" width="50" height="50"></td>
+    <td>5</td>
+    <td>2</td>
+    <td>5</td>
+    <td>Muito rápido e poderoso</td>
+  </tr>
+  <tr>
+    <td><strong>Peach</strong></td>
+    <td><img src="./docs/peach.gif" width="50" height="50"></td>
+    <td>3</td>
+    <td>4</td>
+    <td>2</td>
+    <td>Excelente manobrabilidade</td>
+  </tr>
+  <tr>
+    <td><strong>Luigi</strong></td>
+    <td><img src="./docs/luigi.gif" width="50" height="50"></td>
+    <td>3</td>
+    <td>4</td>
+    <td>4</td>
+    <td>Bom em curvas e confrontos</td>
+  </tr>
+  <tr>
+    <td><strong>Yoshi</strong></td>
+    <td><img src="./docs/yoshi.gif" width="50" height="50"></td>
+    <td>2</td>
+    <td>4</td>
+    <td>3</td>
+    <td>Ágil nas curvas</td>
+  </tr>
+  <tr>
+    <td><strong>Donkey Kong</strong></td>
+    <td><img src="./docs/dk.gif" width="50" height="50"></td>
+    <td>2</td>
+    <td>2</td>
+    <td>5</td>
+    <td>Extremamente poderoso</td>
+  </tr>
+</table>
 
-<input type="checkbox" id="jogadores-item" />
-<label for="jogadores-item">O Computador deve receber dois personagens para disputar a corrida em um objeto cada</label>
+## 🏁 Mecânicas do Jogo
 
-<b>Pistas:</b>
+### 🎯 Objetivo
+Acumular o maior número de pontos ao longo de 5 rodadas de corrida.
 
-<ul>
-  <li><input type="checkbox" id="pistas-1-item" /> <label for="pistas-1-item">Os personagens irão correr em uma pista aleatória de 5 rodadas</label></li>
-  <li><input type="checkbox" id="pistas-2-item" /> <label for="pistas-2-item">A cada rodada, será sorteado um bloco da pista que pode ser uma reta, curva ou confronto</label>
-    <ul>
-      <li><input type="checkbox" id="pistas-2-1-item" /> <label for="pistas-2-1-item">Caso o bloco da pista seja uma RETA, o jogador deve jogar um dado de 6 lados e somar o atributo VELOCIDADE, quem vencer ganha um ponto</label></li>
-      <li><input type="checkbox" id="pistas-2-2-item" /> <label for="pistas-2-2-item">Caso o bloco da pista seja uma CURVA, o jogador deve jogar um dado de 6 lados e somar o atributo MANOBRABILIDADE, quem vencer ganha um ponto</label></li>
-      <li><input type="checkbox" id="pistas-2-3-item" /> <label for="pistas-2-3-item">Caso o bloco da pista seja um CONFRONTO, o jogador deve jogar um dado de 6 lados e somar o atributo PODER, quem perder, perde um ponto</label></li>
-      <li><input type="checkbox" id="pistas-2-3-item" /> <label for="pistas-2-3-item">Nenhum jogador pode ter pontuação negativa (valores abaixo de 0)</label></li>
-    </ul>
-  </li>
-</ul>
+### 🛣️ Tipos de Pista
 
-<b>Condição de vitória:</b>
+| Tipo | Probabilidade | Atributo Usado | Descrição |
+|------|---------------|----------------|-----------|
+| **RETA** | 33% | Velocidade | Teste de velocidade pura |
+| **CURVA** | 33% | Manobrabilidade | Teste de habilidade nas curvas |
+| **CONFRONTO** | 34% | Poder | Batalha direta entre os personagens |
 
-<input type="checkbox" id="vitoria-item" />
-<label for="vitoria-item">Ao final, vence quem acumulou mais pontos</label>
+### 🎲 Sistema de Pontuação
+
+#### Reta e Curva
+- Cada jogador rola um dado de 6 lados
+- Soma o resultado com o atributo correspondente
+- O jogador com maior total **ganha 1 ponto**
+
+#### Confronto
+- Cada jogador rola um dado de 6 lados
+- Soma o resultado com o atributo PODER
+- O jogador que **perder** perde 1 ponto (mínimo 0)
+
+### 🏆 Condição de Vitória
+Ao final das 5 rodadas, vence quem tiver mais pontos acumulados.
+
+## 🚀 Como Executar
+
+### Pré-requisitos
+- [Node.js](https://nodejs.org/) instalado em seu sistema
+
+### Instalação e Execução
+
+1. **Clone o repositório:**
+   ```bash
+   git clone https://github.com/daniolivem/dio.git
+   cd dio/simulador-mk
+   ```
+
+2. **Execute o simulador:**
+   ```bash
+   npm start
+   ```
+   
+   ou
+   
+   ```bash
+   npm run dev
+   ```
+
+## 🏗️ Estrutura do Projeto
+
+```
+simulador-mk/
+│
+├── docs/                   # Imagens e documentação
+│   ├── bowser.gif
+│   ├── dk.gif
+│   ├── header.gif
+│   ├── luigi.gif
+│   ├── mario.gif
+│   ├── peach.gif
+│   ├── toad.gif
+│   └── yoshi.gif
+│
+├── src/
+│   └── index.js           # Código principal do simulador
+│
+├── package.json           # Configurações do projeto
+└── README.md             # Documentação
+```
+
+## 💻 Código Principal
+
+### Funções Principais
+
+#### `rollDice()`
+```javascript
+async function rollDice() {
+  return Math.floor(Math.random() * 6) + 1;
+}
+```
+Simula o lançamento de um dado de 6 lados.
+
+#### `getRandomBlock()`
+```javascript
+async function getRandomBlock() {
+  let random = Math.random();
+  let result;
+
+  switch (true) {
+    case random < 0.33:
+      result = "RETA";
+      break;
+    case random < 0.66:
+      result = "CURVA";
+      break;
+    default:
+      result = "CONFRONTO";
+      break;
+  }
+
+  return result;
+}
+```
+Determina aleatoriamente o tipo de bloco da pista.
+
+#### `playRaceEngine(character1, character2)`
+Função principal que executa a lógica da corrida por 5 rodadas.
+
+#### `declareWinner(character1, character2)`
+Declara o vencedor e exibe o resultado final.
+
+## 🎮 Exemplo de Execução
+
+```
+🏁🚨 Corrida entre Mário e Browser começando..
+
+🏁 Rodada 1
+Bloco: RETA
+Mário 🎲 rolou um dado de velocidade 3 + 4 = 7 
+Browser 🎲 rolou um dado de velocidade 6 + 5 = 11 
+Browser marcou um ponto.
+--------------------------------------------------------
+
+🏁 Rodada 2
+Bloco: CONFRONTO
+Browser confrontou com Mário 🥊!
+Browser 🎲 rolou um dado de poder 4 + 5 = 9 
+Mário 🎲 rolou um dado de poder 2 + 3 = 5 
+Browser venceu o confronto! Mário perdeu 1 ponto 🐢
+--------------------------------------------------------
+
+...
+
+Resultado final:
+Mário: 2 ponto(s)
+Browser: 3 ponto(s)
+
+Browser venceu a corrida! Parabéns! 🏆
+```
+
+## 🔧 Personalização
+
+Para alterar os personagens da corrida, modifique as variáveis no final do arquivo `src/index.js`:
+
+```javascript
+(async function main() {
+  console.log(
+    `🏁🚨 Corrida entre ${player1.NOME} e ${player2.NOME} começando..\n`
+  );
+
+  await playRaceEngine(player1, player2); // Altere player1 e player2
+  await declareWinner(player1, player2);
+})();
+```
+
+## 🤝 Contribuindo
+
+1. Faça um fork do projeto
+2. Crie uma branch para sua feature (`git checkout -b feature/AmazingFeature`)
+3. Commit suas mudanças (`git commit -m 'Add some AmazingFeature'`)
+4. Push para a branch (`git push origin feature/AmazingFeature`)
+5. Abra um Pull Request
+
+## 📝 Possíveis Melhorias
+
+- [ ] Interface gráfica web
+- [ ] Mais personagens
+- [ ] Diferentes tipos de pista
+- [ ] Sistema de power-ups
+- [ ] Multiplayer online
+- [ ] Salvamento de histórico de corridas
+- [ ] Sistema de ranking
+
+## 📄 Licença
+
+Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+## 👨‍💻 Autor
+
+**Daniely Oliveira**
+- Projeto desenvolvido como parte do Bootcamp da DIO
+- GitHub: [@daniolivem](https://github.com/daniolivem)
+
+## 🎓 Créditos
+
+- **DIO (Digital Innovation One)** - Bootcamp e desafio
+- **Nintendo** - Personagens e conceito original do Mario Kart
+- **Felipão** - Instrutor do desafio
+
+---
+
+<div align="center">
+  <strong>🏎️ Que vença o melhor piloto! 🏆</strong>
+</div>
