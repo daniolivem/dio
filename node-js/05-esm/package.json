@@ -1,12 +1,13 @@
 {
-  "name": "cjs",
+  "name": "05-esm",
   "version": "1.0.0",
   "main": "index.js",
+  "type":"module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "daniely oliveira",
   "license": "ISC",
-  "description": "Project to demonstrate CommonJS module system in Node.js"
+  "description": "Project to demonstrate ES module system in Node.js"
 }
