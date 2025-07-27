@@ -1,4 +1,4 @@
-# 📚 Guia Completo sobre Modularização em Node.js
+# 📚 Guia Completo sobre Modularização em Node.js (em construção)
 
 ## 🎯 Introdução
 
